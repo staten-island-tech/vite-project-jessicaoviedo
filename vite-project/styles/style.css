@@ -14,6 +14,10 @@ h1 {
   line-height: 1.1;
 }
  */
+
+body{ 
+  background-color: var(--third);
+}
 #app {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,15 +43,21 @@ h1 {
 
 :root{
   --black: #000;
-  --amethyst: #8B5FBF;
-  --pinklace: #F5CCE8;
-  --mauve: #DAB6FC;
-  --orchid: #EF9CDA;
-  --maxbluepurple: #BBADFF;
+  --lavenderblush: #FFECEE;
+  --lighterpink: #FFE0E6;
+  --mimipink: #FFD4DE;
+  --pink: #FEBDCE;
+  --nadeshikopink: #FEB1C6;
+  --crimsonua: #A51C30;
+  --cardinal: #C52233;
+  --darkred: #9B0E0E;
+  --persianplum: #74121D;
+  --darksienna: #580C1F:
+    
 
   /*intentions*/
-  --primary: var(--amethyst);
-  --secondary: var(--pinklace);
+  --primary: var(--pink);
+  --secondary: var(--lighterpink);
 
   /*typography */
   --h1: 7.594rem;
@@ -56,6 +66,19 @@ h1 {
   --h4: 2.25rem;
   --h5: 1.5rem;
 }
+
+.light{
+  --primary: var(--pink);
+  --secondary: var(--lighterpink);
+  --third:var(--nadeshikopink);
+}
+
+.dark{
+  --primary: var(--darkred);
+  --secondary: var(--persianplum);
+  --third: var(--crimsonua);
+}
+
 
 h2 {
   font-size: var(--h2);
@@ -76,6 +99,25 @@ h3,
 h4, 
 h5 {
   text-align: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 /* .logo 
