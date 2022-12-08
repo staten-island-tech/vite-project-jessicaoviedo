@@ -6,8 +6,8 @@ AOS.init();
 import { plushies } from "./menu";
 
 document.querySelector("#app").innerHTML = `
-  <h1>hello vite!!!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">documentation</a>
+  <h1>wholesome sanrio plushies!</h1>
+  <a href="https://www.sanrio.com/" target="_blank">go to sanrio</a>
 `;
 
 console.log(plushies);

@@ -22,7 +22,8 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: white;
+  font-size: 1.5rem;
   margin-top: 60px;
   height: 100vh;
   width: 100vw;
@@ -48,6 +49,8 @@ body{
   --mimipink: #FFD4DE;
   --pink: #FEBDCE;
   --nadeshikopink: #FEB1C6;
+  --salmonpink: #FF8FA3;
+  --ultrared: #FF758F;
   --crimsonua: #A51C30;
   --cardinal: #C52233;
   --darkred: #9B0E0E;
@@ -71,12 +74,14 @@ body{
   --primary: var(--pink);
   --secondary: var(--lighterpink);
   --third:var(--nadeshikopink);
+  --fourth:var(--salmonpink);
 }
 
 .dark{
   --primary: var(--darkred);
   --secondary: var(--persianplum);
   --third: var(--crimsonua);
+  --fourth: var(--ultrared)
 }
 
 
@@ -104,15 +109,19 @@ h5 {
 .btn,
 .btn:link,
 .btn:visited {
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  text-align: center;
+  background-color: --;
+  padding: 1rem 3rem;
   display: inline-block;
-  margin: 1rem auto;
-  font-size: 2rem;
+  display: flex;
+  margin: auto;
+  font-size: 1.25rem;
   border: none;
   border-radius: 10rem;
   transition: all 0.2s;
+  background-color: var(--fourth);
 }
 
 .btn:hover {
@@ -120,6 +129,9 @@ h5 {
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
+h1 {
+  color: solid white
+}
 /* .logo 
   height: 6em;
   padding: 1.5em;
