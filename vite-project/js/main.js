@@ -21,3 +21,27 @@ document.querySelector(".btn").addEventListener("click", function () {
     document.body.classList.remove("dark");
   }
 });
+
+const DOMSelectors = {
+  display: document.querySelector("#display"),
+  name: document.getElementById("#name"),
+  price: document.getElementById("#price"),
+  img: document.getElementById("img"),
+  inStock: document.getElementById("#inStock"),
+  rare: document.getElementById("#rare"),
+};
+
+DOMSelectors.display.addEventListener(function (e) {
+  e.preventDefault();
+  console.log(e);
+  let name = DOMSelectors.name.value;
+  let price = DOMSelectors.price.value;
+  let img = DOMSelectors.img.value;
+  let inStock = DOMSelectors.inStock.value;
+  let rare = DOMSelectors.rare.value;
+  console.log(name);
+  console.log(price);
+  console.log(img);
+  console.log(inStock);
+  console.log(rare);
+});

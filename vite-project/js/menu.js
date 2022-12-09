@@ -2,8 +2,6 @@ const plushies = [
   {
     name: "hello kitty",
     price: 10.0,
-    girl: true,
-    boy: false,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/Untitled-1_8c3aee0f-88bd-4291-b25d-0d6818b74221_1200x.png?v=1648050069",
     inStock: true,
     rare: false,
@@ -11,8 +9,6 @@ const plushies = [
   {
     name: "kuromi",
     price: 12.0,
-    girl: true,
-    boy: false,
     img: "https://m.media-amazon.com/images/I/51JWYglitwL.jpg",
     inStock: true,
     rare: false,
@@ -20,8 +16,6 @@ const plushies = [
   {
     name: "melody",
     price: 15.0,
-    girl: true,
-    boy: false,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/627747-Zoom.1_2000x.jpg?v=1664384628",
     inStock: true,
     rare: false,
@@ -29,8 +23,6 @@ const plushies = [
   {
     name: "badtz-maru",
     price: 12.0,
-    girl: false,
-    boy: true,
     img: "https://www.yourwdwstore.net/assets/images/7/70000/4000/000/74090u1.jpg",
     inStock: true,
     rare: true,
@@ -38,8 +30,6 @@ const plushies = [
   {
     name: "keroppi",
     price: 10.0,
-    girl: false,
-    boy: true,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/618853-Zoom.1_1200x.jpg?v=1664384425",
     inStock: true,
     rare: false,
@@ -47,8 +37,6 @@ const plushies = [
   {
     name: "pompompurin",
     price: 15.0,
-    girl: false,
-    boy: true,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/627763-Zoom.1_1200x.jpg?v=1664384640",
     inStock: true,
     rare: true,
@@ -56,8 +44,6 @@ const plushies = [
   {
     name: "pekkle",
     price: 12.0,
-    girl: false,
-    boy: true,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/594768-Zoom.1_1200x.jpg?v=1664907928",
     inStock: true,
     rare: false,
@@ -65,8 +51,6 @@ const plushies = [
   {
     name: "tuxedo sam",
     price: 15.0,
-    girl: false,
-    boy: true,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/TuxedoSam1_27780e33-40e0-4575-9522-731d01d9bc4f_1200x.jpg?v=1638320340",
     inStock: true,
     rare: false,
@@ -74,8 +58,6 @@ const plushies = [
   {
     name: "chococat",
     price: 12.0,
-    girl: false,
-    boy: true,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/618951-Zoom.1_1600x.jpg?v=1664384485",
     inStock: true,
     rare: true,
@@ -83,8 +65,6 @@ const plushies = [
   {
     name: "gudetama",
     price: 15.0,
-    girl: false,
-    boy: false,
     img: "https://now.estarland.com/images/products/25/66625/Merchandise-Gudetama-The-Lazy-Egg-Light-Up-LED-6-Inch-Plush-large-image.jpg",
     inStock: true,
     rare: false,
@@ -92,8 +72,6 @@ const plushies = [
   {
     name: "pochacco",
     price: 12.0,
-    girl: false,
-    boy: true,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/610801-Zoom.1_1200x.jpg?v=1657303300",
     inStock: true,
     rare: true,
@@ -101,8 +79,6 @@ const plushies = [
   {
     name: "cinnamoroll",
     price: 15.0,
-    girl: false,
-    boy: true,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/618870-Zoom.2_1000x.jpg?v=1664384448",
     inStock: true,
     rare: true,
