@@ -22,26 +22,36 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-const DOMSelectors = {
-  display: document.querySelector("#display"),
-  name: document.getElementById("#name"),
-  price: document.getElementById("#price"),
-  img: document.getElementById("img"),
-  inStock: document.getElementById("#inStock"),
-  rare: document.getElementById("#rare"),
-};
+plushies.form.addEventListener("click");
+/* plushies.name.insertAdjacentElement(
+  `"beforeend",
+  <div class="card" id="card-box">
+    <h2 class="card-name">${name}</h2>
+    <h3 class="card-price">${price}</h3>
+    <img class="plushieimg" src="${img}" alt="this is the plushie img>
+  </div>`
+); */
 
-DOMSelectors.display.addEventListener(function (e) {
-  e.preventDefault();
-  console.log(e);
-  let name = DOMSelectors.name.value;
-  let price = DOMSelectors.price.value;
-  let img = DOMSelectors.img.value;
-  let inStock = DOMSelectors.inStock.value;
-  let rare = DOMSelectors.rare.value;
-  console.log(name);
-  console.log(price);
-  console.log(img);
-  console.log(inStock);
-  console.log(rare);
-});
+//const DOMSelectors = {
+//display: document.querySelector("#display"),
+//name: document.getElementById("#name"),
+//price: document.getElementById("#price"),
+//img: document.getElementById("img"),
+//inStock: document.getElementById("#inStock"),
+//rare: document.getElementById("#rare"),
+//};
+
+//DOMSelectors.display.addEventListener(function (e) {
+//e.preventDefault();
+//console.log(e);
+//let name = DOMSelectors.name.value;
+//let price = DOMSelectors.price.value;
+//let img = DOMSelectors.img.value;
+//let inStock = DOMSelectors.inStock.value;
+//let rare = DOMSelectors.rare.value;
+//console.log(name);
+//console.log(price);
+//console.log(img);
+//console.log(inStock);
+//console.log(rare);
+//});

@@ -1,5 +1,7 @@
 const plushies = [
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "hello kitty",
     price: 10.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/Untitled-1_8c3aee0f-88bd-4291-b25d-0d6818b74221_1200x.png?v=1648050069",
@@ -7,6 +9,8 @@ const plushies = [
     rare: false,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "kuromi",
     price: 12.0,
     img: "https://m.media-amazon.com/images/I/51JWYglitwL.jpg",
@@ -14,6 +18,8 @@ const plushies = [
     rare: false,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "melody",
     price: 15.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/627747-Zoom.1_2000x.jpg?v=1664384628",
@@ -21,6 +27,8 @@ const plushies = [
     rare: false,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "badtz-maru",
     price: 12.0,
     img: "https://www.yourwdwstore.net/assets/images/7/70000/4000/000/74090u1.jpg",
@@ -28,6 +36,8 @@ const plushies = [
     rare: true,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "keroppi",
     price: 10.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/618853-Zoom.1_1200x.jpg?v=1664384425",
@@ -35,6 +45,8 @@ const plushies = [
     rare: false,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "pompompurin",
     price: 15.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/627763-Zoom.1_1200x.jpg?v=1664384640",
@@ -42,6 +54,8 @@ const plushies = [
     rare: true,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "pekkle",
     price: 12.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/594768-Zoom.1_1200x.jpg?v=1664907928",
@@ -49,6 +63,8 @@ const plushies = [
     rare: false,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "tuxedo sam",
     price: 15.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/TuxedoSam1_27780e33-40e0-4575-9522-731d01d9bc4f_1200x.jpg?v=1638320340",
@@ -56,6 +72,8 @@ const plushies = [
     rare: false,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "chococat",
     price: 12.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/618951-Zoom.1_1600x.jpg?v=1664384485",
@@ -63,6 +81,8 @@ const plushies = [
     rare: true,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "gudetama",
     price: 15.0,
     img: "https://now.estarland.com/images/products/25/66625/Merchandise-Gudetama-The-Lazy-Egg-Light-Up-LED-6-Inch-Plush-large-image.jpg",
@@ -70,6 +90,8 @@ const plushies = [
     rare: false,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "pochacco",
     price: 12.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/610801-Zoom.1_1200x.jpg?v=1657303300",
@@ -77,6 +99,8 @@ const plushies = [
     rare: true,
   },
   {
+    display: document.querySelector("#display"),
+    form: document.querySelector("#form"),
     name: "cinnamoroll",
     price: 15.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/618870-Zoom.2_1000x.jpg?v=1664384448",
