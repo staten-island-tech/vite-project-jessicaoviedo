@@ -2,13 +2,26 @@ import "../styles/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
-AOS.init();
+import { DOM } from "./dom";
 import { plushies } from "./menu";
+AOS.init();
 
 document.querySelector("#app").innerHTML = `
   <h1>wholesome sanrio plushies!</h1>
   <a href="https://www.sanrio.com/" target="_blank">go to sanrio</a>
 `;
+
+/* const getProducts = {
+  getPlushies: plushies
+    .filter((element) => element.type.includes("plushies"))
+    .forEach((element) => {
+      console.log(element.name);
+      DOM.box.insertAdjacentHTML = `
+    <h2>${element.name}</h2>`;
+    }),
+};
+
+getProducts.getPlushies; */
 
 console.log(plushies);
 
@@ -22,7 +35,7 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-plushies.form.addEventListener("click");
+/* plushies.form.addEventListener("click"); */
 /* plushies.name.insertAdjacentElement(
   `"beforeend",
   <div class="card" id="card-box">
