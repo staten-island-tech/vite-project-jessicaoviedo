@@ -1,9 +1,8 @@
 import "../styles/style.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-import { DOM } from "./dom";
+import "aos/dist/aos.css";
 import { plushies } from "./menu";
+import { DOM } from "./dom";
 AOS.init();
 
 document.querySelector("#app").innerHTML = `
@@ -23,7 +22,36 @@ document.querySelector("#app").innerHTML = `
 
 getProducts.getPlushies; */
 
-console.log(plushies);
+const getRProducts = {
+  getRare: plushies
+    .filter((element) => element.type.includes(`rare`))
+    .forEach((element) => {
+      console.log(element.name);
+      DOM.box.insertAdjacentElement = `
+    <h1>${element.name}</h1>`;
+    }),
+};
+
+getRProducts.getRare.insertAdjacentElement(
+  "beforeend",
+  `<div class = "card" id= "card-box">
+    <h2 class= "card-name">${element.name}</h2>
+    <h3 class= "card-price">${element.price}</h3>
+    <img class= "card-img" src="${img}>
+    <h3 class= "card-availability">${element.inStock}</h3>
+    <h3 class= "card-type">${element.type}</h3>
+    </div>`
+);
+
+const getCProducts = {
+  getCommon: plushies
+    .filter((element) => element.type.includes(`common`))
+    .forEach((element) => {
+      console.log(element.name);
+      DOM.box.insertAdjacentElement = `
+    <h1>${element.name}</h1>`;
+    }),
+};
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
