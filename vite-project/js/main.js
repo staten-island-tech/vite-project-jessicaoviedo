@@ -2,7 +2,6 @@ import "../styles/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { plushies } from "./menu";
-import { DOM } from "./dom";
 AOS.init();
 
 document.querySelector("#app").innerHTML = `
@@ -10,6 +9,7 @@ document.querySelector("#app").innerHTML = `
   <a href="https://www.sanrio.com/" target="_blank">go to sanrio</a>
 `;
 
+console.log(plushies);
 /* const getProducts = {
   getPlushies: plushies
     .filter((element) => element.type.includes("plushies"))
@@ -22,7 +22,7 @@ document.querySelector("#app").innerHTML = `
 
 getProducts.getPlushies; */
 
-const getRProducts = {
+/* const getRProducts = {
   getRare: plushies
     .filter((element) => element.type.includes(`rare`))
     .forEach((element) => {
@@ -42,8 +42,8 @@ getRProducts.getRare.insertAdjacentElement(
     <h3 class= "card-type">${element.type}</h3>
     </div>`
 );
-
-const getCProducts = {
+ */
+/* const getCProducts = {
   getCommon: plushies
     .filter((element) => element.type.includes(`common`))
     .forEach((element) => {
@@ -51,7 +51,7 @@ const getCProducts = {
       DOM.box.insertAdjacentElement = `
     <h1>${element.name}</h1>`;
     }),
-};
+}; */
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
