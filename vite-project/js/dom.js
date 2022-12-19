@@ -1,6 +1,7 @@
 const DOM = {
   display: document.querySelector("#display"),
-  app: document.querySelector("#app"),
+  typeFilter: document.getElementById("#type"),
+  inStockFilter: document.getElementById("#inStock"),
 };
 
 export { DOM };
