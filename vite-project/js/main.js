@@ -12,13 +12,13 @@ document.querySelector("#app").innerHTML = `
 
 plushies.forEach((plushie) => {
   DOM.display.insertAdjacentHTML(
-    "afterbegin",
+    "afterend",
     `<div class="plushie-card">
     <h2 class="plushie-product">${plushie.name}</h2>
     <div class= "img-container">
     <div class= "img-overlay">
     </div>
-    <img src=""
+    <img src="${plushie.img}"
     alt="" class= "plushie-img">
     </div>
     <h3 class= "plushie-price">price: $${plushie.price}</h3>
