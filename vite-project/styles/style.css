@@ -75,13 +75,17 @@ body{
   --secondary: var(--lighterpink);
   --third:var(--nadeshikopink);
   --fourth:var(--salmonpink);
+  --card: var(--lighterpink);
+  --border: var(--crimsonua);
 }
 
 .dark{
   --primary: var(--darkred);
   --secondary: var(--persianplum);
   --third: var(--crimsonua);
-  --fourth: var(--ultrared)
+  --fourth: var(--ultrared);
+  --card: var(--salmonpink);
+  --border: var(--darksienna);
 }
 
 

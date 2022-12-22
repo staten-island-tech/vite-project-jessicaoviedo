@@ -1,6 +1,11 @@
-#plushie-cards{
-    display: inline;
-    border: 5px solid black;
+
+.plushie-card{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 10rem;
+    border: 5px solid var(--border);
+    background-color: var(--card);
 }
 
 .plushie-img{
