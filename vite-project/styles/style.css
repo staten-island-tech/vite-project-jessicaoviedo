@@ -55,7 +55,9 @@ body{
   --cardinal: #C52233;
   --darkred: #9B0E0E;
   --persianplum: #74121D;
-  --darksienna: #580C1F:
+  --darksienna: #580C1F;
+  --firenginered: #CD0C2B;
+  --cherryblossonpink: #FFB3C1;
     
 
   /*intentions*/
@@ -77,15 +79,17 @@ body{
   --fourth:var(--salmonpink);
   --card: var(--lighterpink);
   --border: var(--crimsonua);
+  --buttons:var(--mimipink);
 }
 
 .dark{
   --primary: var(--darkred);
   --secondary: var(--persianplum);
-  --third: var(--crimsonua);
+  --third: var(--cardinal);
   --fourth: var(--ultrared);
   --card: var(--salmonpink);
-  --border: var(--darksienna);
+  --border: var(--lighterpink);
+  --buttons: var(--cherryblossonpink);
 }
 
 
@@ -116,9 +120,7 @@ h5 {
   text-transform: lowercase;
   text-decoration: none;
   text-align: center;
-  background-color: --;
   padding: 1rem 3rem;
-  display: inline-block;
   display: flex;
   margin: auto;
   font-size: 1.25rem;
@@ -132,6 +134,78 @@ h5 {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
+
+.inStock-btn,
+.inStock-btn:link,
+.inStock-btn:visited {
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 3rem;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  background-color: var(--buttons);
+}
+
+.inStock-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.expensive-btn,
+.expensive-btn:link,
+.expensive-btn:visited {
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 3rem;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  background-color: var(--buttons);
+}
+
+.expensive-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.rare-btn,
+.rare-btn:link,
+.rare-btn:visited {
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 3rem;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  background-color: var(--buttons);
+}
+
+.rare-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+
+
 
 h1 {
   color: solid white

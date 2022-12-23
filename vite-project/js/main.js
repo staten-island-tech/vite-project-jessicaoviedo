@@ -81,6 +81,10 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
+document
+  .querySelector(".inStock-btn")
+  .addEventListener("click", function () {});
+
 /* plushies.form.addEventListener("click"); */
 /* plushies.name.insertAdjacentElement(
   `"beforeend",
