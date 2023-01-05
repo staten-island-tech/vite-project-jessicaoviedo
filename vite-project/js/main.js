@@ -38,7 +38,54 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-function inStockbtn() {
+inStock.addEventListener("click", function () {
+  display.innerHTML = "";
+  const inStockfilter = plushies.filter(
+    (plush) => plush.inStock === "in stock!"
+  );
+  inStockfilter.forEach((element) => {
+    display.insertAdjacentHTML(
+      "beforebegin",
+      `
+    <div class="plushie-card">
+    <h2 class="plushie-product">${element.name}</h2>
+    <div class= "img-container">
+    <div class= "img-overlay">
+    </div>
+    <img src="${element.img}"
+    alt="" class= "plushie-img">
+    </div>
+    <h3 class= "plushie-price">price: $${element.price}</h3>
+    </div>`
+    );
+  });
+});
+
+/* function inStock() {
+  inStockFilter
+    .filter((element) => element.inStock.includes("in stock!"))
+    .forEach((element) => {
+      element.inStockFilter.insertAdjacentHTML(
+        "beforebegin",
+        `
+    <div class="plushie-card">
+    <h2 class="plushie-product">${plushies.name}</h2>
+    <div class= "img-container">
+    <div class= "img-overlay">
+    </div>
+    <img src="${plushies.img}"
+    alt="" class= "plushie-img">
+    </div>
+    <h3 class= "plushie-price">price: $${plushies.price}</h3>
+    <h4 class = "stock-status">status: ${plushies.inStock}</h4>
+    </div>`
+      );
+    });
+}
+
+inStock(inStockFilter);
+ */
+/* function inStockbtn() {
   const inStock = {
     getInStock: plushies
       .filter((element) => element.inStock.includes(`in stock!`))
@@ -50,11 +97,13 @@ function inStockbtn() {
   };
   inStock.getInStock;
 
-  inStock.forEach((element) => {
-    element.addEventListener("click", function (btn) {
-      btn.DOM.display.insertAdjacentHTML(
-        "beforebegin",
-        `
+  inStock.forEach((inStockbtn) => {
+    inStockbtn
+      .querySelector(".inStock-btn")
+      .addEventListener("click", function (btn) {
+        btn.DOM.display.insertAdjacentHTML(
+          "beforebegin",
+          `
         <div class="plushie-card">
         <h2 class="plushie-product">${plushie.name}</h2>
         <div class= "img-container">
@@ -65,9 +114,10 @@ function inStockbtn() {
         </div>
         <h3 class= "plushie-price">price: $${plushie.price}</h3>
         </div>`
-      );
-    });
+        );
+      });
   });
 }
 
 inStockbtn.getInStock;
+ */
