@@ -78,10 +78,10 @@ const plushies = [
   },
   {
     name: "cinnamoroll",
-    price: 15.0,
+    price: 12.0,
     img: "https://cdn.shopify.com/s/files/1/0416/8083/0620/products/618870-Zoom.2_1000x.jpg?v=1664384448",
     inStock: "in stock!",
-    type: "rare",
+    type: "common",
   },
 ];
 

@@ -12,7 +12,7 @@ document.querySelector("#app").innerHTML = `
 
 plushies.forEach((plushie) => {
   DOM.display.insertAdjacentHTML(
-    "beforebegin",
+    "beforeend",
     `
     <div class="plushie-card">
     <h2 class="plushie-product">${plushie.name}</h2>
@@ -26,7 +26,6 @@ plushies.forEach((plushie) => {
     </div>`
   );
 });
-console.log(plushies);
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
@@ -38,6 +37,7 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
+const inStock = document.getElementById("inStock-btn");
 inStock.addEventListener("click", function () {
   display.innerHTML = "";
   const inStockfilter = plushies.filter(
@@ -45,7 +45,7 @@ inStock.addEventListener("click", function () {
   );
   inStockfilter.forEach((element) => {
     display.insertAdjacentHTML(
-      "beforebegin",
+      "afterbegin",
       `
     <div class="plushie-card">
     <h2 class="plushie-product">${element.name}</h2>
@@ -56,68 +56,54 @@ inStock.addEventListener("click", function () {
     alt="" class= "plushie-img">
     </div>
     <h3 class= "plushie-price">price: $${element.price}</h3>
+    <h3 class= "plushie-status">status: ${element.inStock}</h3>
     </div>`
     );
   });
 });
 
-/* function inStock() {
-  inStockFilter
-    .filter((element) => element.inStock.includes("in stock!"))
-    .forEach((element) => {
-      element.inStockFilter.insertAdjacentHTML(
-        "beforebegin",
-        `
+const rarity = document.getElementById("rare-btn");
+rarity.addEventListener("click", function () {
+  display.innerHTML = "";
+  const rarityfilter = plushies.filter((plush) => plush.type === "rare");
+  rarityfilter.forEach((element) => {
+    display.insertAdjacentHTML(
+      "afterbegin",
+      `
     <div class="plushie-card">
-    <h2 class="plushie-product">${plushies.name}</h2>
+    <h2 class="plushie-product">${element.name}</h2>
     <div class= "img-container">
     <div class= "img-overlay">
     </div>
-    <img src="${plushies.img}"
+    <img src="${element.img}"
     alt="" class= "plushie-img">
     </div>
-    <h3 class= "plushie-price">price: $${plushies.price}</h3>
-    <h4 class = "stock-status">status: ${plushies.inStock}</h4>
+    <h3 class= "plushie-price">price: $${element.price}</h3>
+    <h3 class= "plushie-type">type: ${element.type}</h3>
     </div>`
-      );
-    });
-}
-
-inStock(inStockFilter);
- */
-/* function inStockbtn() {
-  const inStock = {
-    getInStock: plushies
-      .filter((element) => element.inStock.includes(`in stock!`))
-      .forEach((element) => {
-        console.log(element.name);
-        DOM.display.insertAdjacentHTML = `
-      <h1>${element.name}</h1>`;
-      }),
-  };
-  inStock.getInStock;
-
-  inStock.forEach((inStockbtn) => {
-    inStockbtn
-      .querySelector(".inStock-btn")
-      .addEventListener("click", function (btn) {
-        btn.DOM.display.insertAdjacentHTML(
-          "beforebegin",
-          `
-        <div class="plushie-card">
-        <h2 class="plushie-product">${plushie.name}</h2>
-        <div class= "img-container">
-        <div class= "img-overlay">
-        </div>
-        <img src="${plushie.img}"
-        alt="" class= "plushie-img">
-        </div>
-        <h3 class= "plushie-price">price: $${plushie.price}</h3>
-        </div>`
-        );
-      });
+    );
   });
-}
+});
 
-inStockbtn.getInStock;
- */
+const price = document.getElementById("expensive-btn");
+price.addEventListener("click", function () {
+  display.innerHTML = "";
+  const pricefilter = plushies.filter((plush) => plush.price === 15.0);
+  pricefilter.forEach((element) => {
+    display.insertAdjacentHTML(
+      "afterbegin",
+      `
+    <div class="plushie-card">
+    <h2 class="plushie-product">${element.name}</h2>
+    <div class= "img-container">
+    <div class= "img-overlay">
+    </div>
+    <img src="${element.img}"
+    alt="" class= "plushie-img">
+    </div>
+    <h3 class= "plushie-price">price: $${element.price}</h3>
+    <h3 class= "plushie-type">type: ${element.type}</h3>
+    </div>`
+    );
+  });
+});

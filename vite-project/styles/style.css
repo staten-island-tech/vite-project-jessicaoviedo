@@ -25,7 +25,7 @@ body{
   color: white;
   font-size: 1.5rem;
   margin-top: 60px;
-  height: 100vh;
+  height: 25vh;
   width: 100vw;
   text-align: center;
 }
@@ -135,9 +135,9 @@ h5 {
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
-.inStock-btn,
-.inStock-btn:link,
-.inStock-btn:visited {
+#inStock-btn,
+#inStock-btn:link,
+#inStock-btn:visited {
   text-transform: lowercase;
   text-decoration: none;
   text-align: center;
@@ -153,14 +153,14 @@ h5 {
   background-color: var(--buttons);
 }
 
-.inStock-btn:hover {
+#inStock-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
-.expensive-btn,
-.expensive-btn:link,
-.expensive-btn:visited {
+#expensive-btn,
+#expensive-btn:link,
+#expensive-btn:visited {
   text-transform: lowercase;
   text-decoration: none;
   text-align: center;
@@ -176,14 +176,14 @@ h5 {
   background-color: var(--buttons);
 }
 
-.expensive-btn:hover {
+#expensive-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
-.rare-btn,
-.rare-btn:link,
-.rare-btn:visited {
+#rare-btn,
+#rare-btn:link,
+#rare-btn:visited {
   text-transform: lowercase;
   text-decoration: none;
   text-align: center;
@@ -199,7 +199,7 @@ h5 {
   background-color: var(--buttons);
 }
 
-.rare-btn:hover {
+#rare-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
