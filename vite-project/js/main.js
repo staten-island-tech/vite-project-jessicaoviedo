@@ -20,7 +20,7 @@ plushies.forEach((plushie) => {
     <div class= "img-overlay">
     </div>
     <img src="${plushie.img}"
-    alt="" class= "plushie-img">
+    alt="plushies" class= "plushie-img">
     </div>
     <h3 class= "plushie-price">price: $${plushie.price}</h3>
     </div>`
@@ -53,7 +53,7 @@ inStock.addEventListener("click", function () {
     <div class= "img-overlay">
     </div>
     <img src="${element.img}"
-    alt="" class= "plushie-img">
+    alt="plushies in stock" class= "plushie-img">
     </div>
     <h3 class= "plushie-price">price: $${element.price}</h3>
     <h3 class= "plushie-status">status: ${element.inStock}</h3>
@@ -76,7 +76,7 @@ rarity.addEventListener("click", function () {
     <div class= "img-overlay">
     </div>
     <img src="${element.img}"
-    alt="" class= "plushie-img">
+    alt="rare plushies" class= "plushie-img">
     </div>
     <h3 class= "plushie-price">price: $${element.price}</h3>
     <h3 class= "plushie-type">type: ${element.type}</h3>
@@ -99,7 +99,7 @@ price.addEventListener("click", function () {
     <div class= "img-overlay">
     </div>
     <img src="${element.img}"
-    alt="" class= "plushie-img">
+    alt="expensive plushies" class= "plushie-img">
     </div>
     <h3 class= "plushie-price">price: $${element.price}</h3>
     <h3 class= "plushie-type">type: ${element.type}</h3>
